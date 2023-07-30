@@ -9,9 +9,12 @@ class ConnectButton extends Component
 
     public $name;
 
-    public function connect(string $name, string $lastName): void
+    protected $listeners = ['connected' => 'connect'];
+
+    public function connected(): void
     {
-        dd($name, $lastName);
+        dd('Connected!');
+        /* $this->emit('connected'); */
     }
 
     public function render()

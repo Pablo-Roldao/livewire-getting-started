@@ -1,5 +1,5 @@
 <div>
-    <x-button wire:click="$set('name', 'Ana')">
-        Connect {{ $name }}
+    <x-button wire:click="connected">
+        Connect
     </x-button>
 </div>
